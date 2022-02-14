@@ -26,7 +26,7 @@ class UserControllerTest {
         HttpRequest<Object> getUsersRequest = HttpRequest.GET("/users");
         //noinspection rawtypes
         List<Map> users = client.toBlocking().retrieve(getUsersRequest, Argument.listOf(Map.class));
-        assertThat(users.size()).isZero();
+        assertThat(users.size()).isNotZero();
 //        System.out.println("users.get(0) = " + users.get(0));
     }
 
