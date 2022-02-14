@@ -35,4 +35,4 @@ jobs:
       uses: actions/upload-artifact@v2.3.1
       with:
         name: artifact
-        path: build/artifacts
+        path: build/libs/libraries-test-0.1-all.jar
